@@ -9,6 +9,6 @@ Respositorio de Marco Gonzalez para enviar tareas de la materia Programacion Ori
 ## Tarea 2 - Vista de usuarios en ejercicio realizado en clase
 <a href="https://github.com/Marco-Gonzalez26/Programacion_Orientada_A_Objetos/tree/Semana_2_VistaUsuarios">Enlace</a>
 
-## Tarea 3 - Vistas basadas en SQL
+## Tarea 3 - Vistas basadas en SQL Proyecto: Biblioteca
 <a href="https://github.com/Marco-Gonzalez26/Programacion_Orientada_A_Objetos/tree/Semana-3/Biblioteca">Enlace</a>
 
