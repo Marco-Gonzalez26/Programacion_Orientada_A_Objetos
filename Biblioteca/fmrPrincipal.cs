@@ -74,10 +74,5 @@ namespace Biblioteca
             frmTrabajos.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmDescuentos frmDescuentos = new FrmDescuentos();
-            frmDescuentos.Show();
-        }
     }
 }

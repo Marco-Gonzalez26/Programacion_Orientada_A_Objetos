@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionTareasPendientes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56ac3f8c5faef71d1d134376e9e81b214d70ad37")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cardiology.SonoPAC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionTareasPendientes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

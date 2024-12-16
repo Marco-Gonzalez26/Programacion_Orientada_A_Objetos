@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.cmbPub = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtLicencia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFechaCreacion = new System.Windows.Forms.TextBox();
@@ -37,18 +43,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbPub = new System.Windows.Forms.ComboBox();
-            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNivel = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(224)))), ((int)(((byte)(212)))));
+            this.panel1.Controls.Add(this.txtNivel);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cmbCargo);
             this.panel1.Controls.Add(this.cmbPub);
             this.panel1.Controls.Add(this.label7);
@@ -68,6 +72,62 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 618);
             this.panel1.TabIndex = 2;
+            // 
+            // cmbCargo
+            // 
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(31, 348);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(146, 28);
+            this.cmbCargo.TabIndex = 16;
+            // 
+            // cmbPub
+            // 
+            this.cmbPub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPub.FormattingEnabled = true;
+            this.cmbPub.Location = new System.Drawing.Point(31, 270);
+            this.cmbPub.Name = "cmbPub";
+            this.cmbPub.Size = new System.Drawing.Size(304, 28);
+            this.cmbPub.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(27, 388);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(285, 20);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Fecha de Contratacion (hire_date)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 232);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(276, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Editorial a la que trabaja (pub_id)";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(31, 411);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(304, 31);
+            this.textBox2.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(27, 315);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(122, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Cargo (job_id)";
             // 
             // txtLicencia
             // 
@@ -119,9 +179,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(27, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(138, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre";
+            this.label1.Text = "Nombre (fname)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnGuardar
@@ -154,61 +214,23 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // label4
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(31, 411);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(304, 31);
-            this.textBox2.TabIndex = 11;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(185, 315);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 20);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Nivel (job_lvl)";
             // 
-            // label5
+            // txtNivel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 315);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Cargo";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 232);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(205, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Editorial a la que trabaja";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 388);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 20);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Fecha de Contratacion";
-            // 
-            // cmbPub
-            // 
-            this.cmbPub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPub.FormattingEnabled = true;
-            this.cmbPub.Location = new System.Drawing.Point(31, 270);
-            this.cmbPub.Name = "cmbPub";
-            this.cmbPub.Size = new System.Drawing.Size(304, 28);
-            this.cmbPub.TabIndex = 15;
-            // 
-            // cmbCargo
-            // 
-            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Location = new System.Drawing.Point(31, 348);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(304, 28);
-            this.cmbCargo.TabIndex = 16;
+            this.txtNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNivel.Location = new System.Drawing.Point(189, 345);
+            this.txtNivel.Name = "txtNivel";
+            this.txtNivel.Size = new System.Drawing.Size(123, 31);
+            this.txtNivel.TabIndex = 18;
             // 
             // FrmNuevoEmpleado
             // 
@@ -241,5 +263,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbCargo;
         private System.Windows.Forms.ComboBox cmbPub;
+        private System.Windows.Forms.TextBox txtNivel;
+        private System.Windows.Forms.Label label4;
     }
 }

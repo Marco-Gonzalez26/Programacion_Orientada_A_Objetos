@@ -61,18 +61,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 105);
+            this.label3.Location = new System.Drawing.Point(27, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 20);
+            this.label3.Size = new System.Drawing.Size(187, 20);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Nivel Maximo";
+            this.label3.Text = "Nivel Maximo (max_lvl)";
             // 
             // txtNivelMaximo
             // 
             this.txtNivelMaximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNivelMaximo.Location = new System.Drawing.Point(180, 144);
+            this.txtNivelMaximo.Location = new System.Drawing.Point(31, 190);
             this.txtNivelMaximo.Name = "txtNivelMaximo";
-            this.txtNivelMaximo.Size = new System.Drawing.Size(134, 31);
+            this.txtNivelMaximo.Size = new System.Drawing.Size(304, 31);
             this.txtNivelMaximo.TabIndex = 25;
             this.txtNivelMaximo.TextChanged += new System.EventHandler(this.txtCodigoPostal_TextChanged);
             // 
@@ -88,18 +88,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 105);
+            this.label7.Location = new System.Drawing.Point(27, 77);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 20);
+            this.label7.Size = new System.Drawing.Size(179, 20);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Nivel Minimo";
+            this.label7.Text = "Nivel Minimo (min_lvl)";
             // 
             // txtNivelMinimo
             // 
             this.txtNivelMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNivelMinimo.Location = new System.Drawing.Point(31, 144);
+            this.txtNivelMinimo.Location = new System.Drawing.Point(31, 114);
             this.txtNivelMinimo.Name = "txtNivelMinimo";
-            this.txtNivelMinimo.Size = new System.Drawing.Size(134, 31);
+            this.txtNivelMinimo.Size = new System.Drawing.Size(304, 31);
             this.txtNivelMinimo.TabIndex = 11;
             // 
             // label1
@@ -109,9 +109,9 @@
             this.label1.Location = new System.Drawing.Point(27, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.Size = new System.Drawing.Size(192, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Descripcion";
+            this.label1.Text = "Descripcion (job_desc)";
             // 
             // btnGuardar
             // 
